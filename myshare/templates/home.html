@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block title %}Home{% endblock%}
+
+{% block content%}
+<h2>Hello, {{ current_user.username }}</h2>
+
+{% for link in links.items %}
+<div class="con-div">
+
+    <!-- Below is for the profile image -->
+    <!-- <div class="home-profile-pic"> -->
+    <!-- <img id="post-img" src="{{ url_for('static', filename='profile_pics/' + link.author.image_file) }}"> -->
+    <!-- </div> -->
+
+    <a class="text" href={{ link.content }}>{{ link.title.title() }}</a>
+    <p>Posted by <a class="text" href="{{ url_for('users.user_posts', username=link.author.username) }}">{{ link.author.username.title() }}</a> on {{ link.date_posted.strftime("%Y-%m-%d") }}</p>
+    {% if link.author == current_user %}
+            <div>
+
+                <form method="POST">
+                    <button class="update-button" formaction="{{ url_for('link_posts.update_post', post_id=link.id) }}">Update</button>
+                    <button class="delete-button" formaction="{{ url_for('link_posts.delete_post', post_id=link.id) }}" onclick="return myConfirm()" type="submit" name="actiondelete" value="1">Delete</button>
+                </form>
+
+            
+
+            <script>
+                function myConfirm() {
+                var user_name = "{{ current_user.username }}"
+                var result = confirm(user_name + "\nDo you want to delete post?");
+                if (result==true) {
+                return true;
+                } 
+                else {
+                return false;
+                }
+                }
+            </script>             
+
+
+                
+            </div>
+        {% endif %}
+    
+</div>
+<br>
+{% endfor %}
+
+{% for page_num in links.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+    {% if page_num %}
+        {% if links.page == page_num %}
+        <div class="paginate">
+            <a href="{{ url_for('main.home', page=page_num) }}" class="active">{{ page_num }}</a>
+        </div>
+        {% else %}
+        <div class="paginate">
+            <a href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
+        </div>
+        {% endif %}
+    {% else %}
+        ...
+    {% endif %}
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>Reset password</h1>
+
+<form class="my-form" method="post">
+    <div class="form-group">
+        {{ form.password.label }}
+        {{ form.password }}
+    </div>
+    <div class="form-group">
+        {{ form.confirm_password.label }}
+        {{ form.confirm_password }}
+    </div>
+    <div class="form-group">
+        {{ form.submit(type="submit", class="button") }}
+    </div>
+</form>
+
+{% endblock %}

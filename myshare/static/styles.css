@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    background-color: moccasin;
+}
+
+.nav_bar{
+
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+
+}
+
+.flash-message {
+    margin-top: 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+}
+
+.alert-danger {
+    background-color: rgba(209, 172, 158, 0.831);
+    height: auto;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: rgb(218, 241, 159);
+    height: auto;
+    text-align: center;
+}
+
+.flash-text {
+    padding-top: 5;
+    padding-left: 20px;
+}
+
+.text {
+    text-decoration: none;
+    font-style: italic;
+    color:rgb(255, 119, 0) ;
+}
+
+.text:hover {
+    color:rgb(172, 80, 0) ;
+}
+
+.hyper {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.hyper:hover {
+    color:chocolate ;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: none;
+    margin-top: 50px;
+}
+
+.my-form .form-group {
+    padding-bottom: 20px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input {
+    width: 100%;
+    height: 25px;
+    border: none;
+}
+
+#account-form {
+    width: 80%;
+    height: 25px;
+    margin: auto;
+    /* border: none; */
+}
+
+#title {
+    width: 70%;
+}
+
+.my-form .button {
+    width: 30%;
+    background-color: burlywood;
+    border: none;
+    border-radius: 20px;
+}
+
+.my-form .button:hover {
+    background-color: rgb(102, 80, 64);
+}
+
+.my-form .reset-button{
+    width: 40%;
+    background-color: burlywood;
+    border: none;
+    border-radius: 20px;
+}
+
+.my-form .reset-button:hover {
+    background-color: rgb(102, 80, 64);
+}
+/* #post-img {
+
+    width: 15%;
+    border-radius: 150%;
+    float: left;
+    margin-right: 30px;
+    margin-left: auto;
+    display: block;
+    object-fit: contain;
+
+} */
+
+.con-div {
+    /* border-style: dotted; */
+    border-width: 1px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: white;
+    /* display: table; */
+}
+
+.account-div {
+    /* border-style: dotted; */
+    margin: auto;
+    width: 40%;
+    border-width: 1px;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+    display: table;
+}
+
+.account-img {
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+}
+
+.update-button {
+    background-color: #4CAF50;
+    border-width: 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.delete-button {
+    display: inline;
+    background-color: #f06865;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.paginate {
+    display: inline-block;
+}
+
+.paginate a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.paginate a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.paginate a.hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
