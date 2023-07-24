@@ -20,5 +20,4 @@ more.</li>
 <img src="myshare-walkthru.gif" alt="video walkthrough">
 
 <hr>
-Click to view project live deployment
 <a href="bnabdulwasiu.pythonanywhere.com">Click to view live deployment</a>
