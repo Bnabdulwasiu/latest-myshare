@@ -13,3 +13,12 @@ more.</li>
 <li>Also worked on a feature that made users reset their password if they have signed up on the website</li>
 <li>Worked on rendering all the posts made by specific users to make information to users readily available</li>
 </ul>
+<hr>
+
+
+<h1>App walkthrough</h1>
+<img src="myshare-walkthru.gif" alt="video walkthrough">
+
+<hr>
+Click to view project live deployment
+<a href="bnabdulwasiu.pythonanywhere.com">Click to view live deployment</a>
